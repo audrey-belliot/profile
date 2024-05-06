@@ -18,7 +18,7 @@ h1 {
 }
 
 h2, h3 {
-  color:#E72929;
+  color:#FF5BAE;
   font-family:'Courier New', Courier, monospace;
   font-size:18px;
   line-height:.5em;
@@ -33,7 +33,7 @@ a {
   /*color:#FF5BAE*/;
   color:#0A6847;
   font-weight: bold ;
-  font-size:12px;
+  font-size:16px;
 }
 
 a:hover {
@@ -46,7 +46,7 @@ a:hover {
 }
 
 .btn-pink:hover {
-  background-color:#E72929;
+  background-color:#7ABA78;
   color: white;
 }
 
