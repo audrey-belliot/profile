@@ -14,19 +14,20 @@ body {
 h1 {
 
   font-size:24px;
-  line-height:.5em;
+  line-height:1em;
 }
 
 h2, h3 {
   color:#FF5BAE;
   font-family:'Courier New', Courier, monospace;
   font-size:18px;
-  line-height:.5em;
+  line-height:1em;
 }
 
 .green {
   color:#0A6847;
 }
+
 
 a {
   text-decoration: none;
@@ -34,6 +35,10 @@ a {
   color:#0A6847;
   font-weight: bold ;
   font-size:16px;
+}
+
+.small {
+  font-size:12px;
 }
 
 a:hover {
@@ -55,6 +60,20 @@ a:hover {
   margin: 40px auto;
 }
 
+@media (max-width: 992px) {
+  .container {
+    width: 700px;
+    margin: 40px auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 400px;
+    margin: 20px auto;
+  }
+}
+
 .card {
   background-color: white;
   padding: 40px;
@@ -65,7 +84,7 @@ a:hover {
 
 .cards {
   display:grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-gap:16px;
 }
 
@@ -73,10 +92,35 @@ a:hover {
   border-radius:2px;
   border: 2px solid rgba(0, 0, 0, 0.66);
   background-color: white;
-  height: 300px;
+  min-height: 300px;
   margin: 20px;
-  padding: 12px;
+  padding:16px 16px;
   align-content: center;
+  color:#0A6847;
+  font-size:12px;
+  font-weight:medium;
+}
+
+.card-pitch img {
+  width: 100%;
+  height: 320px;
+  object-fit: fit;
+}
+
+.card-pitch-content {
+  display: flex;
+}
+
+.card-pitch-content img {
+  width:200px;
+  height:250px;
+  object-fit: cover;
+  object-position:center;
+  padding: 0px;
+}
+
+.card-pitch-content p {
+  padding: 0px 16px;
 }
 
 .text-center {
